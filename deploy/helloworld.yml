@@ -50,7 +50,7 @@ metadata:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-  - host: demo-concourse-flux.particule.io
+  - host: helloworld.dev.tdg-analytics.io
     http:
       paths:
       - backend:
