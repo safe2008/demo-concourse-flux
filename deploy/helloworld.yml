@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: particule/helloworld
+        image: particule/simplecolorapi:3.0
         imagePullPolicy: Always
         ports:
         - name: web
