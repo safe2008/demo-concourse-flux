@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: demo-concourse-flux
+  namespace: default
   name: helloworld
   labels:
     app: helloworld
@@ -17,7 +17,7 @@ spec:
       app: helloworld
   template:
     metadata:
-      namespace: demo-concourse-flux
+      namespace: default
       labels:
         app: helloworld
     spec:
@@ -32,7 +32,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: demo-concourse-flux
+  namespace: default
   name: helloworld-svc
 spec:
   ports:
@@ -44,7 +44,7 @@ spec:
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  namespace: demo-concourse-flux
+  namespace: default
   name: helloworld
   annotations:
     kubernetes.io/ingress.class: traefik
